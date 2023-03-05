@@ -1,14 +1,24 @@
-// For notes page
-app.get("/notes",(req, res) 
+const router = require("express").Router();
+const path =  require('path')
+
+
+
+// For index (home) page 
+router.get("/", function(req, res) 
     //??
+    {res.sendFile(path.join(__dirname, "../public/index.html"))}
 );
 
-// For index page 
-app.get("/", (req, res) 
-    //??
+// For notes page
+router.get("/notes", function(req, res) 
+    //?? 
+    {res.sendFile(path.join(__dirname, "../public/notes.html"))}
 );
 
 // For typos, etc.
-app.get("*", (req, res) 
+router.get("*", function(req, res) 
     //??
+    {res.sendFile(path.join(__dirname, "../public/index.html"))}
 );
+
+module.exports = router;
