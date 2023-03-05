@@ -19,8 +19,6 @@ app.use(express.json()); //
 app.use(express.static('./public')); //
 
 //Routes
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
 app.use(/*'/', This messes it up for some reason*/htmlRoutes)
 app.use(/*'/api', This messes it up for some reason*/apiRoutes)
 
