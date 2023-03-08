@@ -9,21 +9,26 @@ const apiRoutes = require('./routes/apiRoutes')
 
 // Sets up server
 const app = express(); //
-const PORT = process.env.PORT || 3002; //
+const PORT = process.env.PORT || 3001; //
 
 // Middleware to parse data
-app.use(express.urlencoded({ extended: true })); //
 app.use(express.json()); //
+app.use(express.urlencoded({ extended: true })); //
 
 // Middleware to reference files in public folder
 app.use(express.static('./public')); //
 
 //Routes
-app.use(/*'/', This messes it up for some reason*/htmlRoutes)
-app.use(/*'/api', This messes it up for some reason*/apiRoutes)
+// /api/notes
+app.use('/', htmlRoutes)
+app.use('/api', apiRoutes)
+
+// For typos, etc.
+app.get("*", function(req, res) {
+    console.log('in here')
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+      });  
 
 app.listen(PORT, () => 
     console.info(`App listening at http://localhost:${PORT}`)
-); //
-
-//something about the routes is wrong. alter them
+); 
