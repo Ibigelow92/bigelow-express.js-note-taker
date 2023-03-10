@@ -32,3 +32,6 @@ app.get("*", function(req, res) {
 app.listen(PORT, () => 
     console.info(`App listening at http://localhost:${PORT}`)
 ); 
+
+//check gitignore for node modules
+//maybe because code is in dev folder
