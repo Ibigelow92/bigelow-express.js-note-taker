@@ -2,7 +2,7 @@ const router = require("express").Router();
 const uuid = require("uuid");
 const fs = require('fs')
 const path = require('path')
-
+let noteData = require("../db/db");
 const dbPath = path.join(__dirname, "../db/db.json");
 
 //app.get('/api/pets', (req, res) => res.json(petData));
@@ -53,12 +53,12 @@ router.post("/notes", function (req, res) {
     res.json(newNote);
 });
 
-// Deletes notes
-router.delete("/notes/:id", function (req, res) {
-    const deleteNote = noteData.filter(note => note.id != req.params.id);
+//Deletes notes
+router.delete("/notes/:id", function(req,res) {
+    const deleteNote = noteData.filter( note => note.id != req.params.id);
     noteData = deleteNote;
     console.log("Note successfully deleted");
     res.send("Note successfully deleted");
-});
+}); 
 
 module.exports = router;
