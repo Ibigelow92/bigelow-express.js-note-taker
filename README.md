@@ -12,7 +12,15 @@ To use the project, use git clone to clone the repository to your device. You ca
 
 ## Usage
 
-Once you have the repository open in VS Code, you can right-click "server.js" in the file explorer and select "open in integrated terminal". In the terminal, type "npm i express" to install express. Then type "npm i server.js". You will get a message that says "App listening at http://localhost:3001. Press the control button while you click the link to open the app in the browser. Click "Get started". This will take you to the main page. On the main page, there will be a column of already-made notes on the lefthand side. This will be empty if there are no notes. On the right side, there will be a large area that is mostly blank except for two fields saying "Note title" and "Note text". Click on each one to input your data. When you start typing into the "Note text" field, you will see a save icon appear in the upper-righthand corner of the screen. If you want to save your note, click it and your note will appear in the lefthand column. If you are done with any note and you want to delete it, click the trash bin icon on the righthand side of the saved notes column. 
+Once you have the repository open in VS Code, you can right-click "server.js" in the file explorer and select "open in integrated terminal". 
+![image](https://user-images.githubusercontent.com/115512219/224200815-b9fc9866-cc1f-4f5d-aa6c-92e75576d030.png)
+In the terminal, type "npm i express" to install express. 
+Then type "npm i server.js". You will get a message that says "App listening at http://localhost:3001. 
+Press the control button while you click the link to open the app in the browser. Click "Get started". This will take you to the main page. 
+![image](https://user-images.githubusercontent.com/115512219/224201445-c0a7c19d-ea75-420d-99df-518ddcf0b776.png)
+On the main page, there will be a column of already-made notes on the lefthand side. This will be empty if there are no notes. On the right side, there will be a large area that is mostly blank except for two fields saying "Note title" and "Note text". Click on each one to input your data. When you start typing into the "Note text" field, you will see a save icon appear in the upper-righthand corner of the screen. 
+![image](https://user-images.githubusercontent.com/115512219/224201837-4c381dac-2069-4b40-8ed6-8b137e0f40ca.png)
+If you want to save your note, click it and your note will appear in the lefthand column. If you are done with any note and you want to delete it, click the trash bin icon on the righthand side of the saved notes column. 
 
 ## Credits
 
