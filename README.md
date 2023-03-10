@@ -52,5 +52,13 @@ SOFTWARE.
 
 ## Tests
 
-After you have opened "server.js" in the terminal and installed express, type "node server.js" into the terminal and press "enter". You should get a message saying "App listening at http://localhost:3001". Once you click it, it should take you to the home page of the app, which has a "Get started" button in the center. When you click the button, it should direct you to the main page of the app. After you have typed the title of a note and start to input the text of the note, you should see a save icon appear in the upper righthand corner. When you click the saved icon, your note should appear in the lefthand column. When you click on that note, it should appear again in the righthand text field. When you click the red trashbin icon in the "saved notes" column, the note should disappear from it. 
+After you have opened "server.js" in the terminal and installed express, type "node server.js" into the terminal and press "enter". You should get a message saying "App listening at http://localhost:3001". 
+![image](https://user-images.githubusercontent.com/115512219/224202262-1fc6f124-5f6c-4cf9-a0af-4fad3e402a4f.png)
+Once you click it, it should take you to the home page of the app, which has a "Get started" button in the center.
+![image](https://user-images.githubusercontent.com/115512219/224202445-c2760f84-2d9e-46af-a9f8-f53c6a63e75a.png)
+When you click the button, it should direct you to the main page of the app. 
+![image](https://user-images.githubusercontent.com/115512219/224202551-7b99b19c-2b2f-4ccb-9eb7-4ac96f356a73.png)
+After you have typed the title of a note and start to input the text of the note, you should see a save icon appear in the upper righthand corner. 
+![image](https://user-images.githubusercontent.com/115512219/224202768-b310cc36-c0ed-4ae0-92ab-c8068e885343.png)
+When you click the saved icon, your note should appear in the lefthand column. When you click on that note, it should appear again in the righthand text field. When you click the red trashbin icon in the "saved notes" column, the note should disappear from it. 
 
