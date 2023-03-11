@@ -55,10 +55,17 @@ router.post("/notes", function (req, res) {
 
 //Deletes notes
 router.delete("/notes/:id", function(req,res) {
-    const deleteNote = noteData.filter( note => note.id != req.params.id);
-    noteData = deleteNote;
-    console.log("Note successfully deleted");
-    res.send("Note successfully deleted");
+    const noteToDelete = noteData.filter( note => note.id != req.params.id);
+    readFile(dbPath)
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+
+      const result = json.filter( note => note.id != req.params.id);
+
+      writeFile(dbPath, result);
+
+      res.json(`Note has been successfully deleted`);
+    });
 }); 
 
 module.exports = router;

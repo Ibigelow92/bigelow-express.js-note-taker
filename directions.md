@@ -127,7 +127,6 @@ This Challenge is graded based on the following criteria:
 
 * Application allows users to delete notes.
 
-
 ## Review
 
 You are required to submit BOTH of the following for review:
@@ -139,6 +138,9 @@ You are required to submit BOTH of the following for review:
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
+To push something to Heroku
 git push heroku main
 
 git add
+
+https://bigelow-expressjs-note-taker.herokuapp.com/
